@@ -1,0 +1,14 @@
+# Captured from Sony WH-CH720N (firmware 1.1.4) over RFCOMM channel 18 (Sony V2 service UUID), 2026-11-13.
+# Frames sent by the headphones while Spike probed with read-only requests.
+# ACK for our seq 0
+3E 01 01 00 00 00 00 02 3C
+# ACK for our seq 1
+3E 01 00 00 00 00 00 01 3C
+# Init reply, protocol V2
+3E 0C 00 00 00 00 08 01 00 03 00 10 02 00 00 2A 3C
+# Firmware reply "1.1.4"
+3E 0C 01 00 00 00 08 05 02 05 31 2E 31 2E 34 13 3C
+# Battery reply: single, 70 %, not charging
+3E 0C 00 00 00 00 04 23 00 46 00 79 3C
+# Ambient sound reply to 66 17: off, ambient level 20, voice focus off
+3E 0C 01 00 00 00 07 67 17 01 00 01 00 14 A8 3C
