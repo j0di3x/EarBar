@@ -52,7 +52,7 @@ func render(scale: CGFloat) -> NSBitmapImageRep {
     // footer
     "First launch: right-click EarBar and choose Open".draw(in: NSRect(x: 20, y: 40, width: W - 40, height: 18), withAttributes: [
         .font: NSFont.systemFont(ofSize: 12, weight: .medium), .foregroundColor: NSColor(white: 0.30, alpha: 1), .paragraphStyle: title])
-    "github.com/j0di3x/EarBar".draw(in: NSRect(x: 20, y: 20, width: W - 40, height: 16), withAttributes: [
+    "Free and open source · github.com/j0di3x/EarBar".draw(in: NSRect(x: 20, y: 20, width: W - 40, height: 16), withAttributes: [
         .font: NSFont.systemFont(ofSize: 10.5), .foregroundColor: NSColor(white: 0.5, alpha: 1), .paragraphStyle: title])
 
     NSGraphicsContext.restoreGraphicsState()

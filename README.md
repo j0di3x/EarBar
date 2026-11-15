@@ -59,3 +59,8 @@ packets from real headphones.
 - [ear-web](https://github.com/radiance-project/ear-web) (GPL-3.0)
 - [Creating a Linux controller for the Nothing Ear (2)](https://bharadwaj-raju.github.io/posts/nothing-ear-2-on-linux)
 - [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge) (AGPL-3.0-or-later), for the Sony protocol
+
+## License
+
+MIT, see [LICENSE](LICENSE). Nothing and Ear are trademarks of Nothing Technology. Sony is a
+trademark of Sony Group Corporation.
