@@ -83,7 +83,9 @@ struct PopoverView: View {
                 if let dualConnection = store.dualConnection {
                     Toggle("Multi device", isOn: Binding(get: { dualConnection }, set: { store.setDualConnection($0) }))
                     ForEach(store.devices.filter(\.isConnected), id: \.address) { device in
-                        Label(device.name, systemImage: "checkmark.circle.fill")
+                        // README screenshots (-previewWindow) show a generic name instead of the real one
+                        Label(CommandLine.arguments.contains("-previewWindow") ? "MacBook Pro" : device.name,
+                              systemImage: "checkmark.circle.fill")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }

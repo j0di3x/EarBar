@@ -1,10 +1,17 @@
 # EarBar
 
+<p align="center"><a href="https://ko-fi.com/j0di3x"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-Ko--fi-FF5E5B?logo=kofi&logoColor=white&style=for-the-badge" alt="Buy me a coffee on Ko-fi"></a></p>
+
 Native macOS menu bar app that controls Nothing Ear (3) and Sony WH-CH720N
 headphones over Bluetooth RFCOMM. macOS 14+, Apple silicon, no third-party
 packages.
 
 Not affiliated with Nothing Technology or Sony.
+
+<p align="center">
+  <img src="docs/screenshots/panel-light.png" width="300" alt="EarBar panel in light mode: Nothing Ear (3) connected with battery per bud, noise control set to Transparency, and switches for low lag, multi device and spatial audio">
+  <img src="docs/screenshots/panel-dark.png" width="300" alt="The same EarBar panel in dark mode">
+</p>
 
 ## Build
 
@@ -20,6 +27,8 @@ Tests use only packets captured from real headphones, stored in
 
 - `EarBar`: the menu bar app.
 - `NothingProtocol`: packet encode and decode, without Bluetooth.
+- `EarBar -previewWindow [-light|-dark]` also shows the panel in a normal window, with a
+  generic device name, for README screenshots.
 - `Spike`: logs every packet as hex to `~/Library/Logs/EarBarSpike`.
   `open Spike.app --args --probe` also sends read-only requests;
   add `--sony` for the WH-CH720N.
