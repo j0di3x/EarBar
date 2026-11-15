@@ -13,7 +13,21 @@ Not affiliated with Nothing Technology or Sony.
   <img src="docs/screenshots/panel-dark.png" width="300" alt="The same EarBar panel in dark mode">
 </p>
 
+## Install
+
+1. Get **EarBar-x.y.dmg** from the [latest release](https://github.com/j0di3x/EarBar/releases/latest)
+   and drag **EarBar** onto **Applications**.
+
+   <img src="docs/screenshots/dmg.png" width="480" alt="The installer window: drag EarBar onto Applications">
+
+2. The first time, **right-click EarBar → Open** (it isn't notarized by Apple), then allow
+   Bluetooth access.
+3. Pair your headphones in System Settings → Bluetooth as usual. EarBar's icon sits in the menu
+   bar; click it to see battery and change settings.
+
 ## Build
+
+With the Xcode command-line tools. `./make-dmg.sh` builds the app and the disk image.
 
 ```
 xcodebuild -scheme EarBar -configuration Release build
