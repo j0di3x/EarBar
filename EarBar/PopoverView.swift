@@ -15,6 +15,8 @@ struct PopoverView: View {
             }
             settings
             HStack {
+                Button("Check for Updates…") { Task { await UpdateChecker.shared.check(manual: true) } }
+                    .glassButton()
                 Spacer()
                 Button("Quit EarBar") { NSApplication.shared.terminate(nil) }
                     .glassButton()

@@ -6,6 +6,7 @@ struct EarBarApp: App {
     private let store = HeadsetStore(transport: RFCOMMTransport())
 
     init() {
+        UpdateChecker.shared.start(repo: "j0di3x/EarBar", appName: "EarBar")
         // `-previewWindow` also shows the panel in a normal window (for README screenshots).
         guard CommandLine.arguments.contains("-previewWindow") else { return }
         let store = self.store

@@ -13,6 +13,11 @@ Not affiliated with Nothing Technology or Sony.
   <img src="docs/screenshots/panel-dark.png" width="300" alt="The same EarBar panel in dark mode">
 </p>
 
+## Updates
+
+Once a day EarBar looks for a newer release on GitHub and offers to download it. **Check for
+Updates…** in the panel checks right away. Nothing is installed without you.
+
 ## Install
 
 1. Get **EarBar-x.y.dmg** from the [latest release](https://github.com/j0di3x/EarBar/releases/latest)
